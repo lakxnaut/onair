@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "515658213951",
+    "project_id": "onair-567ed",
+    "storage_bucket": "onair-567ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515658213951:android:14ca7cafa2c238a474268a",
+        "android_client_info": {
+          "package_name": "com.krudo.onair"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515658213951-sn23rd4bbuc7df32tg67cb09ta5vri1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy4NhGR41HgtG6OHxQzzidAjzAckc_0og"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515658213951-sn23rd4bbuc7df32tg67cb09ta5vri1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
