@@ -48,22 +48,36 @@ public class signupActivity extends AppCompatActivity {
                 user.setPass(pass);
                 user.setEmail(email);
 
-                mauth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            database.collection("users").document().set(user);
-                            startActivity(new Intent(signupActivity.this,signinActivity.class));
+
+                if(name.length()==0||email.length()==0||pass.length()==0){
+                    nametext.setError("Enter Name");
+                    emailtext.setError("Enter Name");
+                    passwordtext.setError("Enter Name");
+                }
+
+                else{
+
+                    mauth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if(task.isSuccessful()){
+                                database.collection("users").document().set(user);
+                                startActivity(new Intent(signupActivity.this,signinActivity.class));
+                            }
+                            else {
+                                Toast.makeText(signupActivity.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                            }
                         }
-                        else {
-                            Toast.makeText(signupActivity.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
+                    });
+
+
+                }
 
 
 
-                
+
+
+
             }
         });
 
