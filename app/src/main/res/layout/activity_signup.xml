@@ -85,7 +85,7 @@
                     android:inputType="textPersonName"
                     android:padding="20dp"
                     android:textColor="#000000"
-                    android:textColorHint="#170000" />
+                    android:textColorHint="#571919" />
 
                 <Button
                     android:id="@+id/signUpbutton"

@@ -36,7 +36,7 @@
             <EditText
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="65dp"
                 android:background="@drawable/textbox"
                 android:drawableLeft="@android:drawable/sym_action_email"
                 android:drawablePadding="10dp"
@@ -63,6 +63,7 @@
                 android:hint="Password"
                 android:inputType="textPersonName"
                 android:padding="20dp"
+                android:textColor="#1C0000"
                 android:textColorHint="#170000" />
 
             <Button
